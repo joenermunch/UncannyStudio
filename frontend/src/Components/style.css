@@ -9,6 +9,27 @@
   grid-column: 1/-1;
 }
 
+.result-eyes-one {
+  position: absolute;
+  width: 400px;
+  top: 50px;
+  left: -30px;
+}
+
+.result-eyes-two {
+  position: absolute;
+  width: 200px;
+  left: 100px;
+}
+
+.eyes-one {
+  width: 100px;
+}
+
+.eyes-two {
+  width: 100px;
+}
+
 .choices-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -55,6 +76,16 @@
           justify-content: center;
 }
 
+.result-hair {
+  position: absolute;
+  width: 400px;
+  top: -110px;
+}
+
+.hair-option {
+  width: 50px;
+}
+
 .result-container {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -90,24 +121,13 @@
 
 .result {
   position: absolute;
-}
-
-.eye-one {
-  background: url("../assets/eyes_one.png");
-  background-size: cover;
-}
-
-.eye-one:hover {
-  cursor: pointer;
-}
-
-.eye-two {
-  background: url("../assets/eyes_two.png");
-  background-size: cover;
-}
-
-.eye-two:hover {
-  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .eyes {
