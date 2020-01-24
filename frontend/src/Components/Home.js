@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import Sketch from "./Sketch";
+import { connect } from "react-redux";
 
 export class Home extends Component {
   render() {
-    return <div>Home</div>;
+    return (
+      <div>
+        <h2>Uncanny Studio</h2>
+        <Sketch />
+      </div>
+    );
   }
 }
 
-export default Home;
+export default connect(null)(Home);
