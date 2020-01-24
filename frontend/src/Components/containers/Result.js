@@ -6,7 +6,7 @@ export class Result extends Component {
       <div className="result-box">
         <div className="result-main head">
           <div className="result hair"></div>
-          <div className="result eyes"></div>
+          <div className="result eyes-result eyes"></div>
           <div className="result nose"></div>
           <div className="result mouth"></div>
         </div>
