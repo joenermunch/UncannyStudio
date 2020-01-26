@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Sketch from "./Sketch";
+import Footer from "./Footer";
 import { connect } from "react-redux";
 
 export class Home extends Component {
@@ -12,6 +13,7 @@ export class Home extends Component {
           </div>
         </header>
         <Sketch />
+        <Footer />
       </div>
     );
   }

@@ -14,6 +14,38 @@ body {
   height: 100%;
 }
 
+body {
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  background-color: #192965;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fddb3a;
+  font-size: 16px;
+}
+
+footer a {
+  color: inherit;
+}
+
 header {
   width: 100%;
   height: 10vh;
