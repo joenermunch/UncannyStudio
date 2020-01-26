@@ -1,23 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+
+$mainblue: #192965;
+$mainyellow: #fddb3a;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: $mainblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo-box {
+    .title {
+      font-size: 40px;
+      font-family: "Mansalva", cursive;
+      color: $mainyellow;
+    }
+  }
+}
+
 .sketch-container {
-  display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 1fr;
 
   .sketch-title {
     grid-column: 1/-1;
   }
-}
-
-.result-eyes-one {
-  position: absolute;
-  width: 400px;
-  top: 50px;
-  left: -30px;
-}
-
-.result-eyes-two {
-  position: absolute;
-  width: 200px;
-  left: 100px;
 }
 
 .eyes-one {
@@ -29,13 +51,10 @@
 }
 
 .choices-container {
-  grid-column: 1/2;
-  width: 400px;
-  padding: 20px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Patrick Hand", cursive;
 
   .select-container {
     display: grid;
@@ -49,11 +68,42 @@
 
   .option {
     border: 1px solid black;
-    width: 120px;
-    height: 120px;
+    width: 75px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.choice-menu {
+  width: 100%;
+  border-bottom: 2px solid #eee;
+
+  background-color: #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+    li {
+      margin: 10px;
+      margin-bottom: 0;
+      text-align: center;
+      padding: 5px;
+      color: #696969;
+
+      &:hover {
+        border-bottom: 2px solid $mainblue;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -68,15 +118,12 @@
   width: 50px;
 }
 
-.result-container {
-  grid-column: 2/3;
-}
-
 .result-box {
   position: relative;
-  height: 700px;
-  width: 700px;
-  border: 1px solid black;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 70px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,9 +131,9 @@
 }
 
 .result-main {
-  background-color: green;
-  width: 350px;
-  height: 370px;
+  width: 210px;
+  height: 220px;
+
   position: relative;
 }
 
@@ -106,7 +153,17 @@
 
 .save-button {
   position: absolute;
-  bottom: 30px;
+  bottom: -40px;
+  background: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: $mainblue;
+  border: none;
+  width: 100px;
+  font-size: 16px;
+  font-family: "Mansalva", cursive;
+  color: $mainyellow;
+  font-weight: 900;
 }
 
 .head {

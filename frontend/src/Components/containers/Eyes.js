@@ -6,9 +6,9 @@ import EyesTwo from "../../assets/eyes_two.png";
 
 export class Eyes extends Component {
   changeEyes = option => {
-    !this.props.eyes
-      ? this.props.changeEyes(option)
-      : this.props.changeEyes("");
+    this.props.eyes === option
+      ? this.props.changeEyes("null")
+      : this.props.changeEyes(option);
   };
 
   render() {
@@ -17,20 +17,16 @@ export class Eyes extends Component {
         <h4 className="choice-title">Olhos</h4>
         <div
           className="eyes-option eye-one option"
-          onClick={e => {
-            if (!this.props.eyes) {
-              this.changeEyes("one");
-            } else this.changeEyes("");
+          onClick={() => {
+            this.changeEyes("one");
           }}
         >
           <img className="eyes-one choice" alt="eyes" src={EyesOne} />
         </div>
         <div
           className="eyes-option eye-two option"
-          onClick={e => {
-            if (!this.props.eyes) {
-              this.changeEyes("two");
-            } else this.changeEyes("");
+          onClick={() => {
+            this.changeEyes("two");
           }}
         >
           <img className="eyes-two choice" alt="eyes" src={EyesTwo} />

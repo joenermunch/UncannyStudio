@@ -6,9 +6,9 @@ import HairTwo from "../../assets/hair_two.png";
 
 export class Hair extends Component {
   changeHair = option => {
-    !this.props.hair
-      ? this.props.changeHair(option)
-      : this.props.changeHair("");
+    this.props.hair === option
+      ? this.props.changeHair("null")
+      : this.props.changeHair(option);
   };
 
   render() {
@@ -18,7 +18,7 @@ export class Hair extends Component {
 
         <div
           className="hair-option hair-one option"
-          onClick={e => {
+          onClick={() => {
             this.changeHair("one");
           }}
         >
@@ -29,7 +29,7 @@ export class Hair extends Component {
             src={HairOne}
           />
         </div>
-        <div className="hair option" onClick={e => this.changeHair("two")}>
+        <div className="hair option" onClick={() => this.changeHair("two")}>
           <img
             alt="hair"
             className="hair-option hair-two-option choice"

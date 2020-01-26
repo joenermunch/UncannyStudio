@@ -6,7 +6,11 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Uncanny Studio</h2>
+        <header>
+          <div className="logo-box">
+            <h1 className="title">Uncanny Studio</h1>
+          </div>
+        </header>
         <Sketch />
       </div>
     );
