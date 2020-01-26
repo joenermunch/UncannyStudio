@@ -51,35 +51,34 @@ header {
 }
 
 .choices-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   font-family: "Patrick Hand", cursive;
+}
 
-  .select-container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.select-container {
+  display: flex;
+  overflow: scroll;
+  background-color: #cccccc;
+}
 
-  .choice-title {
-    grid-column: 1/-1;
-  }
+.choice-title {
+  grid-column: 1/-1;
+}
 
-  .option {
-    border: 1px solid black;
-    width: 75px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.option {
+  background-color: white;
+  padding: 50px;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .choice-menu {
-  width: 100%;
   border-bottom: 2px solid #eee;
-
   background-color: #eeeeee;
 
   display: flex;
@@ -110,12 +109,13 @@ header {
 .result-hair {
   position: absolute;
 
-  width: 400px;
+  width: 250px;
   top: -110px;
+  left: 160px;
 }
 
-.hair-option {
-  width: 50px;
+.hair-item {
+  width: 100px;
 }
 
 .result-box {

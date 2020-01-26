@@ -53,35 +53,30 @@ header .logo-box .title {
 }
 
 .choices-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Patrick Hand", cursive;
 }
 
-.choices-container .select-container {
-  display: -ms-grid;
-  display: grid;
-  gap: 10px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+.select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  background-color: #cccccc;
 }
 
-.choices-container .choice-title {
+.choice-title {
   grid-column: 1/-1;
 }
 
-.choices-container .option {
-  border: 1px solid black;
-  width: 75px;
-  height: 75px;
+.option {
+  background-color: white;
+  padding: 50px;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +89,6 @@ header .logo-box .title {
 }
 
 .choice-menu {
-  width: 100%;
   border-bottom: 2px solid #eee;
   background-color: #eeeeee;
   display: -webkit-box;
@@ -131,12 +125,13 @@ header .logo-box .title {
 
 .result-hair {
   position: absolute;
-  width: 400px;
+  width: 250px;
   top: -110px;
+  left: 160px;
 }
 
-.hair-option {
-  width: 50px;
+.hair-item {
+  width: 100px;
 }
 
 .result-box {
