@@ -20,56 +20,14 @@ export class Hair extends Component {
             this.changeHair("one");
           }}
         >
-          <img alt="hair" className="hair-item" src={HairOne} />
+          <img alt="hair" className="hair-item image-option" src={HairOne} />
         </div>
 
         <div
           className="hair-option option hair-two"
           onClick={() => this.changeHair("two")}
         >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
-        </div>
-        <div
-          className="hair-option option hair-two"
-          onClick={() => this.changeHair("two")}
-        >
-          <img alt="hair" className="hair-item" src={HairTwo} />
+          <img alt="hair" className="hair-item image-option" src={HairTwo} />
         </div>
       </div>
     );

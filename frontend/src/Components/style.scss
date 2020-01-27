@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
 
 $mainblue: #192965;
 $mainyellow: #fddb3a;
@@ -19,12 +21,13 @@ body {
 
 body {
   position: relative;
+  background-color: #faf5ef;
 }
 
 footer {
   position: absolute;
   height: 100px;
-  padding: 20px;
+
   width: 100%;
   bottom: 0;
   background-color: $mainblue;
@@ -46,16 +49,23 @@ footer {
 header {
   width: 100%;
   height: 10vh;
-  background-color: $mainblue;
+  background-color: #d7d1c9;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  position: absolute;
 
   .logo-box {
     .title {
-      font-size: 40px;
-      font-family: "Mansalva", cursive;
-      color: $mainyellow;
+      font-size: 20px;
+      font-family: 'Gaegu', cursive;
+
+
+      color: #fd5e53;
+      font-weight: 700;
+
+
+
     }
   }
 }
@@ -68,14 +78,6 @@ header {
   }
 }
 
-.eyes-one {
-  width: 100px;
-}
-
-.eyes-two {
-  width: 100px;
-}
-
 .choices-container {
   align-items: center;
   font-family: "Patrick Hand", cursive;
@@ -83,8 +85,14 @@ header {
 
 .select-container {
   display: flex;
-  overflow: scroll;
-  background-color: #cccccc;
+  overflow: scroll hidden;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+
+
+
 }
 
 .choice-title {
@@ -92,37 +100,44 @@ header {
 }
 
 .option {
-  background-color: white;
+  background-color: #faf5ef;
   padding: 50px;
   margin: 10px;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 3px 2px rgba($color: #000000, $alpha: 0.1);
 }
 
 .choice-menu {
-  border-bottom: 2px solid #eee;
-  background-color: #eeeeee;
 
+  background-color: #eeeeee;
+  box-shadow: 10px 13px 2px rgba($color: #000000, $alpha: 0.4);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+
+
 
   nav ul {
     list-style: none;
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 60px;
 
     li {
       margin: 10px;
       margin-bottom: 0;
       text-align: center;
       padding: 5px;
-      color: #696969;
+      color: #fd5e53;
+      font-family: 'Gaegu', cursive;
+
 
       &:hover {
         border-bottom: 2px solid $mainblue;
@@ -132,13 +147,7 @@ header {
   }
 }
 
-.result-hair {
-  position: absolute;
 
-  width: 250px;
-  top: -110px;
-  left: 160px;
-}
 
 .hair-item {
   width: 100px;
@@ -146,9 +155,24 @@ header {
 
 .result-box {
   position: relative;
-  height: 300px;
-  width: 100%;
-  margin-bottom: 70px;
+  height: 430px;
+
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.result-main {
+  // head
+  width: 350px;
+  height: 350px;
+  background: url("../assets/result/head_two.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -156,45 +180,29 @@ header {
   justify-content: center;
 }
 
-.result-main {
-  width: 210px;
-  height: 220px;
 
-  position: relative;
+
+.result-eyes {
+  width: 350px;
 }
 
-.result {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+.item {
+  width: 100px;
 }
 
-.eyes {
-  background-size: cover;
-  width: 400px;
-  height: 100px;
-  top: 100px;
-  right: -10px;
-}
 
 .save-button {
-  position: absolute;
-  bottom: -40px;
-  background: none;
+
+
   padding: 5px;
   border-radius: 4px;
-  background-color: $mainblue;
-  border: none;
-  width: 100px;
-  font-size: 16px;
-  font-family: "Mansalva", cursive;
-  color: $mainyellow;
-  font-weight: 900;
-}
+  background: none;
 
-.head {
-  background: url("../assets/head_one.png");
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
+  width: 80px;
+  font-size: 15px;
+  font-family: 'Gaegu', cursive;
+  font-weight: 900;
+
+  border: 1px solid #fd5e53;
+  color: #fd5e53;
 }

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { changeEyes } from "../../actions/changeEyes";
-import EyesOne from "../../assets/eyes_one.png";
-import EyesTwo from "../../assets/eyes_two.png";
+import EyesOne from "../../assets/options/eye_option_one.png";
 
 export class Eyes extends Component {
   changeEyes = option => {
@@ -14,23 +13,15 @@ export class Eyes extends Component {
   render() {
     return (
       <div className="eyes-container select-container">
-        <h4 className="choice-title">Olhos</h4>
         <div
-          className="eyes-option eye-one option"
+          className="eyes-options eye-one option"
           onClick={() => {
             this.changeEyes("one");
           }}
         >
-          <img className="eyes-one choice" alt="eyes" src={EyesOne} />
+          <img className="eyes-one eyes-item item" alt="eyes" src={EyesOne} />
         </div>
-        <div
-          className="eyes-option eye-two option"
-          onClick={() => {
-            this.changeEyes("two");
-          }}
-        >
-          <img className="eyes-two choice" alt="eyes" src={EyesTwo} />
-        </div>
+
         <div className="eyes-option option">Opção 2</div>
       </div>
     );

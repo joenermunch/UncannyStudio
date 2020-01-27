@@ -9,11 +9,13 @@ export class Home extends Component {
       <div>
         <header>
           <div className="logo-box">
-            <h1 className="title">Uncanny Studio</h1>
+            <h1 className="title">
+              uncanny <span>studio</span>
+            </h1>
           </div>
+          <button className="save-button">Salvar</button>
         </header>
         <Sketch />
-        <Footer />
       </div>
     );
   }
